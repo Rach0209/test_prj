@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.rog//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="gis">
-<select id="getTestGIS" resultType="string">
+<select id="getTestGis" resultType="HashMap">
+	SELECT 
+		   id
+		 , ST_AsGeoJson(geom, 3857) geom
+		 , ftr_idn
+		 , ftr_cde
+		 , zone_nm
+	  FROM test.test_data_01;
 </select>
 
 </mapper>

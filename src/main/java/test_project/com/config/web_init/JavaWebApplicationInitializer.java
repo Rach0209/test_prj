@@ -1,0 +1,23 @@
+package test_project.com.config.web_init;
+
+import javax.servlet.FilterRegistration;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+
+import org.springframework.web.WebApplicationInitializer;
+import org.springframework.web.filter.CharacterEncodingFilter;
+
+//public class JavaWebApplicationInitializer implements WebApplicationInitializer {
+
+//	@Override
+//	public void onStartup(ServletContext servletContext) throws ServletException {
+//		
+//		
+//		// encodingFilter 설정 - post 방식등으로 파라메타를 한글로 보낼때 깨지지 않게하기 위해
+//		FilterRegistration.Dynamic encodingFilter = servletContext.addFilter("encodingFilter", CharacterEncodingFilter.class);
+//		encodingFilter.setInitParameter("encoding", "UTF-8");
+//		encodingFilter.setInitParameter("forceEncoding", "true");
+//		encodingFilter.addMappingForServletNames(null, false, "/*");
+//	}
+
+//}
