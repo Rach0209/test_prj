@@ -7,7 +7,7 @@ window.map3d = window.map3d || {};
 		file2 : "https://cdn.xdworld.kr/latest/XDWorldEM.html.mem?tm="+tm,
 		file3 : "https://cdn.xdworld.kr/latest/XDWorldEM.js?tm="+tm 
 	}
-//	var filePath = "/resources/js/map/engine/";
+//	var filePath = "/resources/gis/js/map/engine/";
    // 1. XDWorldEM.asm.js 파일 로드
 //   var file = filePath + "XDWorldEM.asm.js";
 	var file = cdn.file1;
