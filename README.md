@@ -8,6 +8,7 @@
 ### 프로젝트 사용시
 - 구글 드라이브로 공유한 zip 파일 열어서 사용할 때는 안에 동봉되어있는 bat파일 실행 후, K: 드라이브 생성되면 거기서 sts 폴더안에있는 sts.exe 실행하시면됩니다.
 - 이외 github clone 이용할 경우에는 https 주소 복사해서 소스트리나 intelliJ 등 아무곳이나 연결해서 사용해도됩니다.
+- zip 파일에 동봉된 sts를 사용할 때, server 설정을 바꾸어야 할 수도 있습니다. 확인하고 사용하세요. (Tomcat admin port : 8086, HTTP/1.1 8085 로 설정되어있으면 -> Tomcat admin port : 8085, HTTP/1.1 8080 으로 설정)
 
 ### 커밋 유의점
 - **자신의 local branch를 생성하여 작업합시다.**
