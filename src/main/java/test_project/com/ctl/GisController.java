@@ -24,6 +24,13 @@ public class GisController {
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome 3DMap!! {}", locale);
 		logger.info(gisService.testConnetcion());
-		return "/main/map";
+		return "/gis/map";
+	}
+	
+	@RequestMapping(value = "/beta")
+	public String homeBeta(Locale locale, Model model) {
+		logger.info("Welcome 3DMap!! {}", locale);
+		logger.info(gisService.testConnetcion());
+		return "/gis/map_beta";
 	}
 }

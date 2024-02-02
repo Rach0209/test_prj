@@ -63,7 +63,7 @@ function init() {
 			},
 			image : {
 				url : vwordURL,
-				name : "tile",
+				name : "tile_mo_HD",
 				servername : "XDServer3d"
 			},
 		},
