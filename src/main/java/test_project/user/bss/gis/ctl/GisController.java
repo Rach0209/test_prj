@@ -1,4 +1,4 @@
-package test_project.com.ctl;
+package test_project.user.bss.gis.ctl;
 
 import java.util.Locale;
 
@@ -10,10 +10,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import test_project.com.svc.GisService;
+import test_project.user.bss.gis.svc.GisService;
 
 @Controller
-@RequestMapping(value = "/gis")
+@RequestMapping(value = "/bss/gis")
 public class GisController {
 	private final Logger logger = LogManager.getLogger(GisController.class);
 	
@@ -24,13 +24,13 @@ public class GisController {
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome 3DMap!! {}", locale);
 		logger.info(gisService.testConnetcion());
-		return "/gis/map";
+		return "/bss/gis/map";
 	}
 	
 	@RequestMapping(value = "/beta")
 	public String homeBeta(Locale locale, Model model) {
 		logger.info("Welcome 3DMap!! {}", locale);
 //		logger.info(gisService.testConnetcion());
-		return "/gis/map_beta";
+		return "/bss/gis/map_beta";
 	}
 }

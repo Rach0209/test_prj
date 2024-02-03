@@ -1,4 +1,4 @@
-package test_project.com.svc;
+package test_project.user.bss.gis.svc;
 
 import java.util.HashMap;
 import java.util.List;

@@ -26,7 +26,7 @@ var Module = {
 			},
 			worker : {
 				use : true,
-				path : "/resources/gis/js/map/engine_beta/worker/XDWorldWorker.js",
+				path : "/resources/bss/gis/js/map/engine_beta/worker/XDWorldWorker.js",
 				count : 5
 			},
 			defaultKey : "ezbBD(h2eFCmDQFQd9QpdzDS#zJRdJDm4!Epe(a2EzcbEzb2"

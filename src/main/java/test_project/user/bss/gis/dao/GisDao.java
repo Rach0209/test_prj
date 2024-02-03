@@ -1,4 +1,4 @@
-package test_project.com.dao;
+package test_project.user.bss.gis.dao;
 
 import java.util.List;
 

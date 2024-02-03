@@ -1,4 +1,4 @@
-package test_project.com.svc.impl;
+package test_project.user.bss.gis.svc.impl;
 
 import java.util.HashMap;
 import java.util.List;
@@ -9,8 +9,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
 
-import test_project.com.dao.GisDao;
-import test_project.com.svc.GisService;
+import test_project.user.bss.gis.dao.GisDao;
+import test_project.user.bss.gis.svc.GisService;
 
 @Service(value = "gisService")
 public class GisServiceImpl implements GisService {
