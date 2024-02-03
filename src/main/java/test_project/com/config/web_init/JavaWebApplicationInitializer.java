@@ -1,12 +1,5 @@
 package test_project.com.config.web_init;
 
-import javax.servlet.FilterRegistration;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-
-import org.springframework.web.WebApplicationInitializer;
-import org.springframework.web.filter.CharacterEncodingFilter;
-
 //public class JavaWebApplicationInitializer implements WebApplicationInitializer {
 
 //	@Override
