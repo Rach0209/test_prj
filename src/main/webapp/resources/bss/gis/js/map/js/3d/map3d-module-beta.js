@@ -5,8 +5,11 @@ var Module = {
 	locateFile : function(s) {
 		return "https://cdn.xdworld.kr/beta/"+ s;
 	},
-	postRun: function() {
-		const vworld = "https://xdworld.vworld.kr";
+	postRun: init
+};
+
+function init() {
+	const vworld = "https://xdworld.vworld.kr";
 		
 		// 엔진 초기화 API 호출(필수)
 		Module.initialize({
@@ -31,8 +34,16 @@ var Module = {
 			},
 			defaultKey : "ezbBD(h2eFCmDQFQd9QpdzDS#zJRdJDm4!Epe(a2EzcbEzb2"
 		});
-	}
-};
+		
+		var layer = Module.getTileLayerList().createXDServerLayer({
+			url : "https://xdworld.vworld.kr",
+			servername : "XDServer3d",
+			name : "facility_build",
+			type : 9,
+			minLevel : 0,
+			maxLevel : 15
+		});
+}
 
 var script = document.createElement('script');
 script.src = "https://cdn.xdworld.kr/beta/XDWorldEM.js";
