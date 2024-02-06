@@ -1,15 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration>
 <configuration>
-	<include resource="org/springframework/boot/logging/logback/base.xml" />
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>[log4j2-logback] %d{yyyy-MM-dd HH:mm:ss.SSS} %-5p [%c] %m%n</pattern>
+        </encoder>
+    </appender>
+    
+				<!--     log4jdbc-log4j2 -->
+	<logger name="org" 							level="ERROR" additivity="false" />
+    <logger name="jdbc"             			level="OFF" 	/>
+    <logger name="jdbc.sqlonly"             	level="INFO" 	/>
+    <logger name="jdbc.sqltiming"             	level="OFF"  	/>
+    <logger name="jdbc.audit"                 	level="OFF"  	/>
+    <logger name="jdbc.resultset"             	level="ERROR" 	/>
+    <logger name="jdbc.resultsettable"         	level="ERROR" 	/>
+    <logger name="jdbc.connection"            	level="OFF"  	/>    
 	
-	<!-- log4jdbc-log4j2 -->
 	
-	<logger name="jdbc.sqlonly" 			level="DEBUG" />
-	<logger name="jdbc.sqltiming" 			level="INFO"  />
-	<logger name="jdbc.audit" 				level="WARN"  />
-	<logger name="jdbc.resultset" 			level="ERROR" />
-	<logger name="jdbc.resultsettable" 		level="ERROR" />
-	<logger name="jdbc.connection"			level="INFO"  />	
+<!-- 		<Logger name="org.springframework.core" 		level="ERROR" additivity="false" /> -->
+<!--    	<Logger name="org.springframework.beans" 		level="ERROR" additivity="false" /> -->
+<!--    	<Logger name="org.springframework.context" 		level="ERROR" additivity="false" /> -->
+<!--    	<Logger name="org.springframework.web" 			level="ERROR" additivity="false" /> -->
+   	<Logger name="test_project" 					level="DEBUG" additivity="false" />
+    
+    <!-- ===================================== -->
+    <!-- ================= 참고 ================ -->
+    <!-- Possible Log Levels:                  -->
+    <!-- ===================================== -->
+    <!-- FATAL, ERROR, WARN, INFO, DEBUG, TRACE -->
 
+    <root level="DEBUG">
+        <appender-ref ref="console"/>
+    </root>
 </configuration>
+
+
+
+
+

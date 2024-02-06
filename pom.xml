@@ -8,7 +8,7 @@
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
-		<java-version>1.6</java-version>
+		<java-version>11</java-version>
 		<org.springframework-version>5.3.29</org.springframework-version>
 		<org.aspectj-version>1.9.19</org.aspectj-version>
 		<org.slf4j-version>2.0.7</org.slf4j-version>
@@ -111,6 +111,13 @@
 			</exclusions>
 			<scope>runtime</scope>
 		</dependency>
+
+		<!-- Logback -->
+	    <dependency>
+	        <groupId>ch.qos.logback</groupId>
+	        <artifactId>logback-classic</artifactId>
+	        <version>1.4.14</version> <!-- 현재 버전에 맞게 업데이트 -->
+	    </dependency>
 
 		<!-- @Inject -->
 		<dependency>
@@ -233,7 +240,14 @@
 		    <artifactId>log4jdbc-log4j2-jdbc4.1</artifactId>
 		    <version>1.16</version>
 		</dependency>
-				
+							<!-- lombok -->
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <version>${org.lombok-version}</version>
+		    <scope>provided</scope>
+		</dependency>
 		
 	</dependencies>
     <build>

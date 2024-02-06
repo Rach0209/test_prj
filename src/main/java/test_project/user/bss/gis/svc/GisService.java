@@ -5,4 +5,5 @@ import java.util.List;
 
 public interface GisService {
 	public List<HashMap<String, Object>> testConnetcion();
+	public String getNow();
 }

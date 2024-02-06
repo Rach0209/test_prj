@@ -11,4 +11,8 @@
 	  FROM test.test_data_01;
 </select>
 
+<select id="getNow" resultType="string">
+	SELECT TO_CHAR(NOW(), 'yyyy-MM-dd HH:mm:ss.SSS') now;
+</select>
+
 </mapper>
