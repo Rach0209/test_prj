@@ -20,3 +20,9 @@
 ### 해야할 일
 - [ ] DB 관련 공유 혹은 개인 DB 사용 ?
 - [ ] 추가내용 받아요
+
+
+
+### 깃 오류 해결
+- 소스트리나 gitbash에서 ```git config --global --add safe.directory '*' ``` 를 입력하시면 safe directory 에러가 사라질 것이에요. 
+- *error message : (git log 128)*
