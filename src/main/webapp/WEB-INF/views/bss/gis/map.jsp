@@ -8,8 +8,10 @@
 					<!-- css-lib -->
 <link rel="stylesheet" href="/resources/com/js/lib/jquery-ui/jquery-ui.css" type="text/css">
 <link rel="stylesheet" href="/resources/com/js/lib/bootstrap/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="/resources/bss/gis/lib/openlayers/ol.css" type="text/css">
 					<!-- css-user -->
 <link rel="stylesheet" href="/resources/bss/gis/js/map/css/map.css" type="text/css">
+
 
 </head>
 <body>
@@ -20,6 +22,7 @@
 <script src="/resources/com/js/lib/jquery/jquery-3.4.1.min.js"></script>
 <script src="/resources/com/js/lib/jquery-ui/jquery-ui.js"></script>
 <script src="/resources/com/js/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/resources/bss/gis/lib/openlayers/ol.js"></script>
 
 					<!-- javascript-user -->
 <script src="/resources/bss/gis/js/map/js/2d/map2d.js"></script>
