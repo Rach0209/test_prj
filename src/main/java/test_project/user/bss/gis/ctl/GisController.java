@@ -24,7 +24,7 @@ public class GisController {
 	
 	@RequestMapping(value = "")
 	public String home(Locale locale, Model model) {
-		logger.info("Welcome 3DMap!! {}", locale);
+		logger.info("Welcome 2DMap!! {}", locale);
 		return "/bss/gis/map";
 	}
 	

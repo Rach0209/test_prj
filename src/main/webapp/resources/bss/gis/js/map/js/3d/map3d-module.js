@@ -1,4 +1,3 @@
-window.map3d = window.map3d || {};
 // 엔진 파일 로드
 (function() {
  	var tm = (new Date()).getTime();	// 캐싱 방지	

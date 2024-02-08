@@ -16,7 +16,7 @@
 </head>
 <body>
 	<div id="map2D"></div>
-	<div id="map3D"></div>
+	<div id="map3D" style="display: none;"></div>
 </body>
 					<!-- javascript-lib -->
 <script src="/resources/com/js/lib/jquery/jquery-3.4.1.min.js"></script>
@@ -26,5 +26,5 @@
 
 					<!-- javascript-user -->
 <script src="/resources/bss/gis/js/map/js/2d/map2d.js"></script>
-<script src="/resources/bss/gis/js/map/js/3d/map3d-module.js"></script>
+<!-- <script src="/resources/bss/gis/js/map/js/3d/map3d-module.js"></script> -->
 </html>
